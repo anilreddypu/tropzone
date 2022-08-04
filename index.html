@@ -518,7 +518,10 @@
                             <h1 class="display-5 mb-4">Free Quote</h1>
                         </div>
                         <p class="mb-4 pb-2">If you have business enquiries or any queries or feedback or quote, do feel free to contact us below:</p>
-                        <form>
+						
+						<!-- p class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" style="background-color: green;border-color: green;">Thank you for your message, We will get back soon!</p -->
+						
+                        <form action="mail.php" method="post">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
                                     <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
@@ -533,7 +536,7 @@
                                     <textarea class="form-control border-0" placeholder="Message"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                                    <button class="btn btn-primary w-100 py-3" name="submit" type="submit">Submit</button>
                                 </div>
                             </div>
                         </form>
